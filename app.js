@@ -11,6 +11,7 @@ class CanvasDrawing {
         this.setLineColor("#000");
         
         this.drawing = false;
+        this.drawingPanel = drawingPanel;
 
         this.init();
     }
@@ -34,6 +35,7 @@ class CanvasDrawing {
         canvas.addEventListener("mousemove", this.draw);
         canvas.addEventListener("mouseup", this.stopDrawing);
         canvas.addEventListener("mouseout", this.stopDrawing);
+        this.drawingPanel.addPanelListeners(this.setLineColor, this.setLineWidth);
 
         
     }
@@ -60,4 +62,4 @@ class CanvasDrawing {
 
 }
 
-const canvasDrawing = new CanvasDrawing();
+const canvasDrawing = new CanvasDrawing(drawingPanel);
