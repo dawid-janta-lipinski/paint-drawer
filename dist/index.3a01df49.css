@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+}
+
+.draw-options {
+  justify-content: space-evenly;
+  align-items: center;
+  width: 300px;
+  padding: 20px;
+  display: flex;
+  position: fixed;
+}
+
+.canvas {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */
